@@ -4,6 +4,7 @@ const express = require("express");
 const app = express();
 
 app.use("/documentation", express.static("documentation"));
+app.use("/demo", express.static("demo"));
 
 const port = 3000;
 app.listen(port, "0.0.0.0", () => {
