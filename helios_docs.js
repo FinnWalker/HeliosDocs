@@ -4,6 +4,7 @@ const express = require("express");
 const app = express();
 
 app.use("/documentation/demo", express.static("demo"));
+app.use("/documentation/promo", express.static("promo/dist"));
 app.use("/documentation", express.static("documentation"));
 
 const port = 3000;
